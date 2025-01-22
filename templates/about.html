@@ -1,12 +1,182 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    About
+    About Us
 {% endblock title %}
     
+{% block extra_styles %}
+<style>
+    /* General Page Style */
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+
+    h2, h3 {
+        color: #343a40;
+        font-weight: bold;
+    }
+
+    .lead {
+        color: #6c757d;
+    }
+
+    /* Container Styling */
+    .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-top: 2rem;
+        border: 1px solid #ddd;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    /* Section Styling */
+    .row {
+        margin-top: 30px;
+    }
+
+    .col-md-6 {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: #007bff;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    /* Button Styling */
+    .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+    /* List Style */
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        padding-left: 1.2em;
+        position: relative;
+    }
+
+    ul li:before {
+        content: "\2022";
+        color: #007bff;
+        position: absolute;
+        left: 0;
+    }
+
+    /* Team Section Styling */
+    .team-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .team-member {
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f8f9fa;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .team-member h4 {
+        margin-bottom: 10px;
+        color: #343a40;
+    }
+
+    /* Social Media Styling */
+    .social-media {
+        margin-top: 30px;
+    }
+
+    .social-media a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: #007bff;
+    }
+
+    .social-media a:hover {
+        color: #0056b3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column;
+        }
+
+        .col-md-6 {
+            margin-bottom: 30px;
+        }
+
+        .team-section {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+</style>
+{% endblock extra_styles %}
 
 {% block body %}
+    <div class="container py-5">
+        <h2 class="text-center mb-4">About Abdullah Ice Creams</h2>
+        <p class="lead text-center">At Abdullah Ice Creams, we take pride in offering the finest, creamiest ice cream made from the freshest ingredients. Our mission is to bring joy to our customers by delivering high-quality ice cream and frozen treats that will keep you coming back for more.</p>
 
-    
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3>Our Story</h3>
+                <p>Abdullah Ice Creams started as a small family business with a passion for creating delicious and innovative ice cream flavors. Over the years, we have grown and refined our recipes, ensuring every bite is a delightful experience. We source the best ingredients locally and internationally to craft our signature flavors, and we believe that everyone deserves a taste of happiness.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Our Values</h3>
+                <ul>
+                    <li><strong>Quality:</strong> We never compromise on quality, from our ingredients to our service.</li>
+                    <li><strong>Innovation:</strong> We are always experimenting with new flavors and combinations to surprise and delight our customers.</li>
+                    <li><strong>Community:</strong> We are committed to supporting our local community by sourcing fresh, local ingredients and participating in local events.</li>
+                    <li><strong>Sustainability:</strong> We care about the environment and strive to reduce our carbon footprint through sustainable practices.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <h3>Meet Our Team</h3>
+            <p>Our team is made up of passionate individuals who share a love for creating the best ice cream and providing top-notch customer service. We work together to ensure that every scoop we serve is as delightful as the last!</p>
+        </div>
+
+        <div class="text-center mt-5">
+            <h3>Join Us on Our Journey!</h3>
+            <p>Follow us on social media to stay updated on new flavors, events, and special promotions!</p>
+        </div>
+    </div>
 {% endblock body %}
-    
